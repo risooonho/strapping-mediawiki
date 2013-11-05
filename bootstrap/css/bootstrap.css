@@ -818,11 +818,14 @@ pre {
   border-radius: 3px;
 }
 code {
+  border-left: 5px solid #999 !important;
   padding: 2px 4px;
   color: #d14;
+}
+p code {
+  display: block;
   background-color: #f7f7f9;
   border: 1px solid #e1e1e8;
-  white-space: nowrap;
 }
 pre {
   display: block;
@@ -5867,5 +5870,21 @@ ul.nav.logo-container {
 
 ul.nav.logo-container img {
 	max-width: 100%;
+}
+
+/* Make category links stand out from the actual page content */
+#catlinks {
+	margin-top: 50px;
+	border-top: 1px solid #eee;
+}
+
+/* Override wiki edit form's crappy default margins and element sizing */
+
+.layout .previewnote, .layout #editform {
+	margin: 0 !important;
+}
+     
+.wikiEditor-ui-toolbar .tabs, .wikiEditor-ui-toolbar .section-main {
+	height: auto !important;
 }
 
