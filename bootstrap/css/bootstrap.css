@@ -5857,3 +5857,15 @@ button.close {
     overflow: visible !important;
   }
 }
+
+/* Added so that the logo and menu will be adjacent to one another instead of wasting valuable vertical space */
+ul.nav.logo-container {
+	float: left;
+	max-width: 400px;
+	margin-top: 10px;
+}
+
+ul.nav.logo-container img {
+	max-width: 100%;
+}
+
